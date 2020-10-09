@@ -1,0 +1,19 @@
+Scenario: successfully login to account
+Given: have a valid email and password
+When: enter email and password in respected fields
+Then: login to account successfully
+
+Scenario: unsuccessfully login to account
+Given: have a valid email and invalid password
+When: enter corrrect email and invalid password in respected fields
+Then: not able to login into account successfully
+
+Scenario: unsuccessfully login to account
+Given: have a invalid email and valid password
+When: enter invalid email and coorrect password in respected fields
+Then: not able to login to account successfully
+
+Scenario: unsuccessfully login to account
+Given: have a invalid email and invalid password
+When: enter invalid email and invlid password in respected fields
+Then: not able to login into account successfully
